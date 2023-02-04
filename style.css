@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    background: #0D1117;
+}
+ header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+ }
+
+ header .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+
+ header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+ }
+
+ header a:hover {
+    color: rgb(58, 174, 58);
+ }
+
+ /* .hero {
+    font-family: 'Inter', sans-serif;
+    background: #43b44e;
+ }
+
+ .experiencia {
+    font-family: 'Inter', sans-serif;
+    background: #b44edf;
+ }
+
+ .habilidades {
+    font-family: 'Inter', sans-serif;
+    background: #d4da37;
+ }
+
+ .sobreMi {
+    font-family: 'Inter', sans-serif;
+    background: #950b65;
+ }
+
+ .contactame {
+    font-family: 'Inter', sans-serif;
+    background: #1c29da;
+ }
+
+ p {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+ } */
+
+ @media (min-width: 850px){
+    header{
+        width: 100%;
+    }
+
+    header .contenedor1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+ }
