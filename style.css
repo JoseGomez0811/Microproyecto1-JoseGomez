@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    background-color: #0D1117;
 }
 
 /* Diseño del navbar */
@@ -44,16 +45,6 @@ header {
     color: rgb(58, 174, 58);
  }
 
- /* .hero {
-    font-family: 'Inter', sans-serif;
-    background: #43b44e;
- }
-
- .experiencia {
-    font-family: 'Inter', sans-serif;
-    background: #b44edf;
- }
-
  .habilidades {
     font-family: 'Inter', sans-serif;
     background: #d4da37;
@@ -86,6 +77,7 @@ header {
 
 html, body {
     height: 100%;
+    font-family: 'Inter', sans-serif;
 }
 
 /* .hero {
@@ -147,5 +139,67 @@ html, body {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+
+    /* Diseño de la sección de experiencia */
+    
+
+
+    .title {
+        /* margin: 0; */
+        padding: 20px 20px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 30px;
+    }
+
+    hr {
+        width: 100%;
+        color: white;
+    }
+
+    /* .tabla {
+        font-weight: normal;
+        color: white;
+    } */
+
+    .project {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        }
+    
+    .project:hover {
+        color: rgb(58, 174, 58);
+    }
+
+    /* .tabla1 {
+        background-color: gray;
+    } */
+
+    table {
+        margin: 30px 30px;
+    }
+
+    .info {
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 25px;
+        background-color: gray;
+        font-weight: bold;
+        color: black;
+    }
+
+    .project {
+        background-color: gray;
+    }
+
+    .img {
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: auto;
+        width: 350px;
     }
  }
