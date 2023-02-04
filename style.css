@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
+:root{
+    --skills-bar-length: 0%;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
     background-color: #0D1117;
+    box-sizing: border-box;
 }
 
 /* Diseño del navbar */
@@ -45,7 +50,7 @@ header {
     color: rgb(58, 174, 58);
  }
 
- .habilidades {
+ /* .habilidades {
     font-family: 'Inter', sans-serif;
     background: #d4da37;
  }
@@ -66,12 +71,7 @@ header {
     font-weight: bold;
     color: black;
     font-size: 40px;
- } */
-
-/* General */
-* {
-    box-sizing: border-box;
-}
+ }  */
 
 /* Diseño del carrusel */
 
@@ -80,20 +80,12 @@ html, body {
     font-family: 'Inter', sans-serif;
 }
 
-/* .hero {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
  .carousel {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-/* Images */
 .images {
     width: 100%;
     height: 490px;
@@ -102,7 +94,6 @@ html, body {
     transition: transform 1s ease-in-out;
 }
 
-/* Controls */
 .controls {
     height: 50px;
     display: flex;
@@ -125,6 +116,132 @@ html, body {
     color: rgb(58, 174, 58);
 }
 
+/* Diseño de la sección de experiencia */
+    
+.title {
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+hr {
+    width: 100%;
+    color: white;
+}
+
+.project {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    }
+
+.project:hover {
+    color: rgb(58, 174, 58);
+}
+
+
+table {
+    margin: 30px 30px;
+}
+
+.info {
+    text-align: center;
+    padding: 50px 50px;
+    font-size: 25px;
+    background-color: gray;
+    font-weight: bold;
+    color: black;
+}
+
+.project {
+    background-color: gray;
+}
+
+.img {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    width: 350px;
+}
+
+/* Diseño de la sección de habilidades */
+
+.habilidades {
+    padding: 25px 25px;
+
+}
+
+.habilidades__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.habilidades__tech {
+    font-weight: bold;
+    color: white;
+    padding: 10px 10px;
+}
+
+.habilidades__barra,
+
+.habilidades__barra::after {
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.habilidades__barra::after {
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: #2d36da;
+    transition: color 0.1s, background-color 0.2s ease-in-out;
+    animation: skills-bar-fill 2s ease-in-out forwards; 
+}
+
+.habilidades__barra--65::after {
+    --skills-bar-length:65%
+}
+
+.habilidades__barra--60::after {
+    --skills-bar-length:60%
+}
+
+.habilidades__barra--50::after {
+    --skills-bar-length:50%
+}
+
+.habilidades__barra--40::after {
+    --skills-bar-length:40%
+}
+
+.habilidades__barra--30::after {
+    --skills-bar-length:30%
+}
+
+.subtitle {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 30px; 
+}
+
+.skillsInfo {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 20px;
+    text-align: justify; 
+}
+
+
  @media (min-width: 850px){
     header{
         width: 100%;
@@ -141,65 +258,10 @@ html, body {
         padding-right: 20px;
     }
 
-    /* Diseño de la sección de experiencia */
-    
+ }  
 
-
-    .title {
-        /* margin: 0; */
-        padding: 20px 20px;
-        text-align: center;
-        font-weight: bold;
-        color: white;
-        font-size: 30px;
+ @keyframes skills-bar-fill { 
+    to {
+        transform: translateX(var(--skills-bar-length));
     }
-
-    hr {
-        width: 100%;
-        color: white;
-    }
-
-    /* .tabla {
-        font-weight: normal;
-        color: white;
-    } */
-
-    .project {
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        }
-    
-    .project:hover {
-        color: rgb(58, 174, 58);
-    }
-
-    /* .tabla1 {
-        background-color: gray;
-    } */
-
-    table {
-        margin: 30px 30px;
-    }
-
-    .info {
-        text-align: center;
-        padding: 50px 50px;
-        font-size: 25px;
-        background-color: gray;
-        font-weight: bold;
-        color: black;
-    }
-
-    .project {
-        background-color: gray;
-    }
-
-    .img {
-        display: block;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin: auto;
-        width: 350px;
-    }
- }
+}
