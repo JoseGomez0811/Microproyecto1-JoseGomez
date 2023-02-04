@@ -241,6 +241,32 @@ table {
     text-align: justify; 
 }
 
+/* Diseño de la sección sobre mí */
+
+.personalImg {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 50px;
+    text-align: center; 
+}
+
+.personalInfo {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 20px;
+    text-align: justify; 
+}
+
+p {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 20px;
+    text-align: justify; 
+}
+
 
  @media (min-width: 850px){
     header{
