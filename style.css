@@ -50,37 +50,14 @@ header {
     color: rgb(58, 174, 58);
  }
 
- /* .habilidades {
-    font-family: 'Inter', sans-serif;
-    background: #d4da37;
- }
-
- .sobreMi {
-    font-family: 'Inter', sans-serif;
-    background: #950b65;
- }
-
- .contactame {
-    font-family: 'Inter', sans-serif;
-    background: #1c29da;
- }
-
- p {
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: black;
-    font-size: 40px;
- }  */
-
 /* Diseño del carrusel */
 
 html, body {
-    height: 100%;
+    /* height: 100%; */
     font-family: 'Inter', sans-serif;
 }
 
- .carousel {
+ .carrusel {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -285,6 +262,89 @@ p {
     }
 
  }  
+
+ h4 {
+    font-weight: bold;
+    color: white;
+    padding: 25px 25px;
+    font-size: 15px;
+ }
+
+ .img3 {
+    margin: 10px;
+    width: 50px;
+    border-radius: 10px;
+ }
+
+ /* Diseño de la sección contáctame */
+
+ .nombre {
+    /* color: white;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column; */
+
+    color: white;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+ }
+
+ .correo {
+    /* color: white;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column; */
+
+    color: white;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+ }
+
+ .mensaje {
+    /* color: white;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column; */
+
+    color: white;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+ }
+
+ .btnEnviar {
+    /* display: block;
+    padding: 5px 5px;
+    background-color: gray; */
+
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: 0px;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    
+ }
+
+ .listContact {
+    list-style-type: none;
+ }
 
  @keyframes skills-bar-fill { 
     to {
