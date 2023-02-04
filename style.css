@@ -6,6 +6,8 @@
     box-sizing: 0;
 }
 
+/* Diseño del navbar */
+
 header {
     font-family: 'Inter', sans-serif;
     background: #0D1117;
@@ -74,6 +76,62 @@ header {
     color: black;
     font-size: 40px;
  } */
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+/* Diseño del carrusel */
+
+html, body {
+    height: 100%;
+}
+
+/* .hero {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+ .carousel {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Images */
+.images {
+    width: 100%;
+    height: 490px;
+    display: flex;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+}
+
+/* Controls */
+.controls {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border: none;
+    background-color: #0D1117;
+    flex-basis: 10%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(58, 174, 58);
+}
 
  @media (min-width: 850px){
     header{
