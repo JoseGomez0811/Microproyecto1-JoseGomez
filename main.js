@@ -1,49 +1,30 @@
 //Funcionalidad del carrusel
 
-const images = document.querySelector(".images")
-const imagesCollection = document.querySelectorAll(".image")
-const prevBtn = document.querySelector(".prev")
-const nextBtn = document.querySelector(".next")
+ window.addEventListener('load', function() {
+     var img = []
 
-prevBtn.addEventListener("click", prevSlide)
-nextBtn.addEventListener("click", nextSlide)
+     img[0] = "Images/Mk4.jpg"
+     img[1] = "Images/Code1.jpg"
+     img[2] = "Images/Cibersecurity2.jpg"
+     img[3] = "Images/Mustang.jpg"
+     img[4] = "Images/Code2.jpeg"
+     img[5] = "Images/R34.jpg"
+     img[6] = "Images/Cibersecurity1.jpg"
 
-let index = 0
+     var n = 0;
 
-let interval = setInterval(startInterval, 4000)
+     function Carrusel(){
+         document.carrusel.src = img[n];
 
-function startInterval() {
-    index++
-    moveCarousel()
-}
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(startInterval, 500)
-}
-
-function moveCarousel() {
-
-    if (index > imagesCollection.length -1) {
-        index = 0
-    } else if (index < 0) {
-        index = imagesCollection.length -1
-    }
-
-    images.style.transform = `translateX(-${index * 1280}px)`
-}
-
-function prevSlide() {
-    index--
-    clearInterval(interval) 
-    moveCarousel()
-}
-
-function nextSlide() {
-    index++
-    clearInterval(interval) 
-    moveCarousel()
-}
+         if(n < 2){
+             n++;
+         }
+         else{
+             n = 0;
+         }
+     }
+     setInterval(Carrusel, 3000);
+ });
 
 // Funcionalidad del formulario
 
