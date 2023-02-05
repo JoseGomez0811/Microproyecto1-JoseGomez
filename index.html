@@ -195,10 +195,10 @@
                     </td>
                     <td class="form">
                         <form>
-                            <p>Nombre: <input type="text" name="name" placeholder="Nombre" class="nombre"></p>
-                            <p>Correo: <input type="text" name="email" placeholder="example@gmail.com" class="correo"></p>
-                            <p>Mensaje: <textarea name="mensaje" placeholder="Deje su mensaje aquí." cols="22" rows="7" class="mensaje"></textarea></p>
-                            <input type="submit" name="enviar" value="Enviar" class="btnEnviar">
+                            <p>Nombre*: <input type="text" name="name" placeholder="Nombre" class="nombre" id="nombre" required></p>
+                            <p>Correo*: <input type="text" name="email" placeholder="example@gmail.com" class="correo" id="correo" required></p>
+                            <p>Mensaje*: <textarea name="mensaje" placeholder="Deje su mensaje aquí." cols="22" rows="7" class="mensaje" id="mensaje" required></textarea></p>
+                            <input type="submit" name="enviar" value="Enviar" class="btnEnviar" id="enviarForm">
                         </form>
                     </td>
                 </tr>
