@@ -45,3 +45,40 @@ document.getElementById("enviarForm").onclick = function(){
 
     form.reset();
 }
+
+// Funcionalidad de las barras
+
+var techName = new Array();
+var techLevel = new Array();
+
+techName[0] = "Python";
+techName[1] = "Java";
+techName[2] = "HTML";
+techName[3] = "CSS";
+techName[4] = "JavaScript";
+techName[5] = "Linux";
+
+techLevel[0] = "65";
+techLevel[1] = "50";
+techLevel[2] = "50";
+techLevel[3] = "40";
+techLevel[4] = "30";
+techLevel[5] = "60";
+
+var techData = [];
+
+for (var x = 0; x<techName.length; x++){
+    techData.push({
+        "Lenguaje" : techName[x],
+        "Nivel" : techLevel[x]
+    });
+}
+
+document.getElementById("Python").innerHTML = techName[0];
+document.getElementById("Java").innerHTML = techName[1];
+document.getElementById("HTML").innerHTML = techName[2];
+document.getElementById("CSS").innerHTML = techName[3];
+document.getElementById("JavaScript").innerHTML = techName[4];
+document.getElementById("Linux").innerHTML = techName[5];
+
+console.log(JSON.stringify(techData));

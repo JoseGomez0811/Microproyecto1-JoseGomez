@@ -10,12 +10,12 @@
     box-sizing: 0;
     background-color: #0D1117;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Diseño del navbar */
 
 header {
-    font-family: 'Inter', sans-serif;
     background: #0D1117;
 }
  header .logo {
@@ -173,7 +173,7 @@ table {
     --skills-bar-length:40%
 }
 
-.habilidades__barra--30::after {
+#habilidades__barra--30::after {
     --skills-bar-length:30%
 }
 
