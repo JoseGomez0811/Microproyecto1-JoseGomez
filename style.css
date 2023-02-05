@@ -127,13 +127,14 @@ table {
     text-align: center;
     padding: 50px 50px;
     font-size: 25px;
-    background-color: gray;
+    background-color: rgb(8, 62, 128);
     font-weight: bold;
     color: black;
+    border-radius: 25px;
 }
 
 .project {
-    background-color: gray;
+    background-color: rgb(8, 62, 128);
 }
 
 .img {
