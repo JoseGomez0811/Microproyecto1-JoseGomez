@@ -206,17 +206,26 @@ table {
 
 .subtitle {
     font-weight: bold;
-    color: white;
+    color: black;
     padding: 25px 25px;
-    font-size: 30px; 
+    font-size: 30px;
+    background-color: gray; 
+    border-radius: 25px;
 }
 
 .skillsInfo {
     font-weight: bold;
-    color: white;
+    color: black;
     padding: 25px 25px;
     font-size: 20px;
-    text-align: justify; 
+    text-align: justify;
+    background-color: gray;
+    border-radius: 25px; 
+}
+
+.info2 {
+    background-color: gray;
+    border-radius: 25px; 
 }
 
 /* Diseño de la sección sobre mí */
