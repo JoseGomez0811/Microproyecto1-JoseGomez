@@ -58,17 +58,19 @@ html, body {
 }
 
  .carrusel {
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 1280px;
     height: auto;
     overflow: hidden;
 }
 
 .images {
     width: 100%;
-    height: 490px;
+    /* height: 500px; */
     display: flex;
     transform: translateY(0);
-    transition: transform 1s ease-in-out;
+    transition: transform 2s ease-in-out;
 }
 
 .controls {
@@ -230,20 +232,21 @@ table {
 
 /* Diseño de la sección sobre mí */
 
-.personalImg {
-    font-weight: bold;
-    color: white;
-    padding: 25px 25px;
-    font-size: 50px;
-    text-align: center; 
+.img2 {
+    display: block;
+    margin: 25px;
+    height: 400px;
+    /* padding: 50px 50px; */
 }
 
 .personalInfo {
+    background-color: rgb(8, 62, 128);
     font-weight: bold;
     color: white;
     padding: 25px 25px;
     font-size: 20px;
     text-align: justify; 
+    border-radius: 25px;
 }
 
 p {

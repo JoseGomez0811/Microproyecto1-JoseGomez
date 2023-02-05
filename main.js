@@ -10,7 +10,7 @@ nextBtn.addEventListener("click", nextSlide)
 
 let index = 0
 
-let interval = setInterval(startInterval, 2000)
+let interval = setInterval(startInterval, 4000)
 
 function startInterval() {
     index++
@@ -30,7 +30,7 @@ function moveCarousel() {
         index = imagesCollection.length -1
     }
 
-    images.style.transform = `translateX(-${index * 800}px)`
+    images.style.transform = `translateX(-${index * 1280}px)`
 }
 
 function prevSlide() {
@@ -61,5 +61,6 @@ document.getElementById("enviarForm").onclick = function(){
     document.getElementById("mensaje").value !== "" ? el3:x3 = false;
 
     x1 === true && x2 === true && x3 === true ? alert(`Nombre: ${el1} \nCorreo: ${el2} \nMensaje: ${el3} \n\nSu solicitud ha sido enviada`): alert("Introduzca los datos correctamente")
-    // x1 === true && x2 === true && x3 === true ? alert("")
+
+    form.reset();
 }
