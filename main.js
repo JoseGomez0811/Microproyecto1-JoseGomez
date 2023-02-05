@@ -29,19 +29,19 @@
 // Funcionalidad del formulario
 
 document.getElementById("enviarForm").onclick = function(){
-    x1 = true
-    x2 = true
-    x3 = true
+    aux1 = true
+    aux2 = true
+    aux3 = true
 
-    const el1 = document.getElementById("nombre").value;
-    const el2 = document.getElementById("correo").value;
-    const el3 = document.getElementById("mensaje").value;
+    const campo1 = document.getElementById("nombre").value;
+    const campo2 = document.getElementById("correo").value;
+    const campo3 = document.getElementById("mensaje").value;
 
-    document.getElementById("nombre").value !== "" ? el1:x1 = false;
-    document.getElementById("correo").value !== "" ? el2:x2 = false;
-    document.getElementById("mensaje").value !== "" ? el3:x3 = false;
+    document.getElementById("nombre").value !== "" ? campo1:aux1 = false;
+    document.getElementById("correo").value !== "" ? campo2:aux2 = false;
+    document.getElementById("mensaje").value !== "" ? campo3:aux3 = false;
 
-    x1 === true && x2 === true && x3 === true ? alert(`Nombre: ${el1} \nCorreo: ${el2} \nMensaje: ${el3} \n\nSu solicitud ha sido enviada`): alert("Introduzca los datos correctamente")
+    aux1 === true && aux2 === true && aux3 === true ? alert(`Nombre: ${campo1} \nCorreo: ${campo2} \nMensaje: ${campo3} \n\nSu solicitud ha sido enviada`): alert("Introduzca los datos correctamente")
 
     form.reset();
 }
